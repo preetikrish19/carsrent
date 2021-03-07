@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.jumbotron-image p,h1{
+    font-family: 'Pacifico', cursive;
+}
+.jumbotron-image{
+    background: url("final1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-dark{
+    background: black;
+}
+.push-spaces{
+    height: 30px;
+}
+.carousel{
+    height: 100%;
+    width: auto;
+}
+.carousel-inner img {
+    max-height: 300px;
+    max-width: 80%;
+}
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 15px;
+}
