@@ -1,11 +1,11 @@
 .text{
 opacity: 0.6;
-color: black;
+color: white;
 }
 .jumbotron{
     background: url("findcar.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40em;
+    height: 20em;
 }

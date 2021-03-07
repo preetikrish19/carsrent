@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdba755e-3c74-41cc-b429-4f1cdb16e8a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admins/loadcardata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admins/addpassenger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admins/addcars.php" beforeDir="false" afterPath="$PROJECT_DIR$/admins/addcars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admins/updaterentals.php" beforeDir="false" afterPath="$PROJECT_DIR$/admins/updaterentals.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admins/viewcars.php" beforeDir="false" afterPath="$PROJECT_DIR$/admins/viewcars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/findcars.php" beforeDir="false" afterPath="$PROJECT_DIR$/findcars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615109069706</updated>
-      <workItem from="1615109077823" duration="9699000" />
+      <workItem from="1615109077823" duration="11040000" />
     </task>
     <servers />
   </component>

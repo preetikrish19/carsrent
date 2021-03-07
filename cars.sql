@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2021 at 01:12 PM
+-- Generation Time: Mar 07, 2021 at 01:35 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.14
 
@@ -48,6 +48,27 @@ CREATE TABLE `car_details` (
 INSERT INTO `car_details` (`car_id`, `carname`, `image`, `numplate`, `driver`, `phone`, `ppd`, `ppkm`, `loc`, `size`) VALUES
 (1, 'xDA', 'file-20200508-49546-dx6y3a.jpg', 'ASDF', '1234', '123', 12, 12, 'guindy', 'micro');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `passengers`
+--
+
+CREATE TABLE `passengers` (
+  `email` varchar(50) NOT NULL,
+  `name` varchar(30) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `phone` varchar(15) DEFAULT NULL,
+  `pwd` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `passengers`
+--
+
+INSERT INTO `passengers` (`email`, `name`, `age`, `phone`, `pwd`) VALUES
+('bmspr1502@gmail.com', 'PRANAVA RAMAN B M S', 12, '9443501317', '1234');
+
 --
 -- Indexes for dumped tables
 --
@@ -57,6 +78,12 @@ INSERT INTO `car_details` (`car_id`, `carname`, `image`, `numplate`, `driver`, `
 --
 ALTER TABLE `car_details`
   ADD PRIMARY KEY (`car_id`);
+
+--
+-- Indexes for table `passengers`
+--
+ALTER TABLE `passengers`
+  ADD PRIMARY KEY (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
