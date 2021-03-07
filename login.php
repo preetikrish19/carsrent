@@ -18,7 +18,7 @@ if(isset($_SESSION['userid'])){
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link href="logo.jpg" rel="icon">
+    <link href="currlogo.jpg" rel="icon">
 
 </head>
 
@@ -53,7 +53,7 @@ if(isset($_SESSION['userid'])){
                 </ul>
             </div>
         </nav>
-        <h1 class="display-3 text-center" id="hmb">
+        <h1 class="display-3 text-center" id="hmb" style="color: black;">
             Login - Rent a car
         </h1>
         <p class="push-spaces"></p>
@@ -85,7 +85,7 @@ if(isset($_SESSION['userid'])){
     <div class="jumbotron text-center bg-dark text-light" style="margin-bottom:0" id="contact-us">
         <div class="row">
             <div class="col-lg-6">
-                <h3>Hotel Muruga Bhavan</h3>
+                <h3>RentAcaR.com</h3>
                 <p>35, Adyar Main Road,<br>Madhya Kailash, <br> Chennai.<br><br>
                     <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919432112345" >+91 94321 12345</a><br>
                     <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >hmb@email.com</a><br>
