@@ -2,8 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdba755e-3c74-41cc-b429-4f1cdb16e8a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/findcars.php" beforeDir="false" afterPath="$PROJECT_DIR$/findcars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/DB.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/addcust.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/addtocart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/deletecart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/gettxns.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/paynow.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/tabledata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/verifylogin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/viewcart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admins/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/admins/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chappathi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dosa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/final1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/idli.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/meals.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pongal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaur.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615109069706</updated>
-      <workItem from="1615109077823" duration="12438000" />
+      <workItem from="1615109077823" duration="13381000" />
     </task>
     <servers />
   </component>
