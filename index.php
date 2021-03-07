@@ -4,7 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hotel Muruga Bhavan</title>
+    <title>Rent A CAR</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -24,7 +24,7 @@ session_start();
 <div class="jumbotron text-white jumbotron-image shadow" id="top" >
     <nav class="navbar navbar-expand-md navbar-dark">
 
-        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>HMB</h1></a>
+        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentAcaR.com</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,7 +68,7 @@ session_start();
     </nav>
 
     <h1 class="display-3 text-center" id="hmb">
-        Hotel Muruga Bhavan
+        Rent A Car!!!
     </h1>
     <p class="push-spaces"></p>
 </div>
