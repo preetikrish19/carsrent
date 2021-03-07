@@ -61,24 +61,28 @@ if(isset($_SESSION['userid'])){
 </header>
 
 <div class="container">
-    <h2 class="text-center">Customer Login</h2>
+    <h2 class="text-center">Passenger Login</h2>
     <p id="error" class="text-white text-center bg-danger"></p>
-    <div class="container">
-        <div class="col-md-6 mx-auto card p-4">
-        <form>
-            <div class="form-group">
-                <label for="phno">Customer Phone no.:</label>
-                <input type="text" class="form-control" placeholder="Enter phone no." id="phone" name="phone">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" placeholder="Enter password" id="password" name="password">
-            </div>
+            <p id="error" class="text-white text-center bg-danger"></p>
+            <p id="success" class="text-white text-center bg-success"></p>
+            <div class="container">
+                <div class="col-md-6 mx-auto card p-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">User email:</label>
+                            <input type="email" class="form-control" placeholder="Enter email address." id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" placeholder="Enter password" id="password" name="password">
+                        </div>
 
-            <button type="button" class="btn btn-primary submit" name="login" onclick="verifyLogin()">Login</button>
-            <a type="button" class="btn btn-success submit" href="newcust.php" >New Customer</a>
-        </form>
-        </div>
+                        <button type="button" class="btn btn-primary submit" name="login" onclick="verifyLogin()">Login</button>
+                        <a type="button" class="btn btn-success submit" href="signup.php" >Sign Up</a>
+                        <a type="button" class="btn btn-danger submit" href="forgot.php">Forgot Password</a>
+                    </form>
+                </div>
+
     </div>
 </div>
 <footer class="mt-4">
@@ -102,6 +106,30 @@ if(isset($_SESSION['userid'])){
 </div>
 <script src="main.js"></script>
 <script>
+    function verifyLogin(){
+        var email = $('#email');
+        var pwd = $('#password');
+        var error = $('#error');
+        var success = $('#success');
+        if(!(pwd.val() && email.val())){
+            error.html("Please fill all the data");
+        }else{
+            $.post('admins/loginuser.php', {
+                email: email.val(),
+                pwd: pwd.val()
+            }, function (result){
+                if(result==='SUCCESS'){
+                    error.empty();
+                    success.html("User Logged in");
+                    alert(result);
+                    window.location.href='index.php'
+                }else{
+                    error.html(result);
+                }
+            })
+        }
+    }
+    /*
    function verifyLogin(){
        if(!($('#phone').val() && $('#password').val())){
             $('#error').html('Please enter phone number and password');
@@ -117,6 +145,7 @@ if(isset($_SESSION['userid'])){
            })
        }
    }
+     */
 </script>
 
 </body>

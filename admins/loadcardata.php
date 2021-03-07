@@ -21,7 +21,7 @@ if(isset($_POST['loc'])){
             <div class="card">
                 <div class="card-header"><?php echo $data['carname']?></div>
                 <div class="card-body">
-                    <img src="img/<?php echo $data['image']?>" class="float-left img-fluid" style="max-height: 200px">
+                    <img src="<?php if($loc!='all')echo "admins/";?>img/<?php echo $data['image']?>" class="float-left img-fluid" style="max-height: 200px">
                     <div class="float-right">
                     <p>NumPlate: <?php echo $data['numplate']?></p>
                     <p>Driver Name: <?php echo $data['driver']?></p>
