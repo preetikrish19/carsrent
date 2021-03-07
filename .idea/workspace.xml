@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdba755e-3c74-41cc-b429-4f1cdb16e8a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admins/addcars.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admins/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admins/loginadmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admins/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admins/updaterentals.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admins/viewcars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admins/adddetails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admins/db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admins/uploadimg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admins/addcars.php" beforeDir="false" afterPath="$PROJECT_DIR$/admins/addcars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admins/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admins/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615109069706</updated>
-      <workItem from="1615109077823" duration="1945000" />
+      <workItem from="1615109077823" duration="5255000" />
     </task>
     <servers />
   </component>

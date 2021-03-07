@@ -23,7 +23,7 @@ if(isset($_SESSION['admin'])){
     </div>
 
     <div class="container">
-        <h2 class="text-center">Admin Login</h2>
+        <h2 class="text-center">Details of Car: </h2>
         <p id="error" class="text-white text-center bg-danger"></p>
         <p id="success" class="text-white text-center bg-success"></p>
         <div class="container">
@@ -36,25 +36,52 @@ if(isset($_SESSION['admin'])){
                         </div>
                         <div class="form-group">
                             <label for="image">Image of Car:</label>
-                            <input type="file" class="form-control" id="carimg" name="carimg">
+                            <input type="file" class="form-control-file" id="carimg" name="carimg">
                         </div>
                         <div class="form-group">
                             <label for="numplate">Number Plate:</label>
                             <input type="text" class="form-control" id="numplate" name="numplate">
                         </div>
                         <div class="form-group">
-                            <label for="usr">Name:</label>
-                            <input type="text" class="form-control" id="usr">
+                            <label for="driver">Driver Name:</label>
+                            <input type="text" class="form-control" id="driver" name="driver">
                         </div>
                         <div class="form-group">
-                            <label for="usr">Name:</label>
-                            <input type="text" class="form-control" id="usr">
+                            <label for="driverphone">Driver Phone:</label>
+                            <input type="text" class="form-control" id="driverphone" name="driverphone">
+                        </div>
+                        <div class="form-group">
+                            <label for="ppd">Price Per Day:</label>
+                            <input type="number" class="form-control" id="ppd" name="ppd">
+                        </div>
+                        <div class="form-group">
+                            <label for="ppkm">Price Per KM:</label>
+                            <input type="number" class="form-control" id="ppkm" name="ppkm">
+                        </div>
+                        <div class="form-group">
+                            <label for="loc">Location: </label>
+                            <select class="form-control" id="loc">
+                                <option value="guindy">Guindy</option>
+                                <option value="chepauk">Chepauk</option>
+                                <option value="ashoknagar">Ashok Nagar</option>
+                                <option value="tambaram">Tambaram</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Size: </label>
+                            <select class="form-control" id="size">
+                                <option value="micro">Micro</option>
+                                <option value="mini">Mini</option>
+                                <option value="suv">SUV</option>
+                            </select>
                         </div>
 
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary submit" name="adddata" onclick="addcar()">add car</button>
+                        </div>
 
                     </div>
 
-                    <button type="button" class="btn btn-primary submit" name="login" onclick="verifyLogin()">Login</button>
                 </form>
             </div>
         </div>
@@ -62,28 +89,68 @@ if(isset($_SESSION['admin'])){
 
     </body>
     <script>
-        function verifyLogin(){
-            var email = $('#email');
-            var pwd = $('#password');
-            var error = $('#error');
-            var success = $('#success');
-            if(!(pwd.val() && email.val())){
-                error.html("Please fill all the data");
+        var carname = $('#carname');
+        var image = $('#carimg')
+        var numplate = $('#numplate')
+        var driver = $('#driver');
+        var driverphone = $('#driverphone');
+        var ppd = $('#ppd');
+        var ppkm = $('#ppkm');
+        var loc = $('#loc');
+        var size = $('#size');
+        var error = $('#error');
+        var success = $('#success');
+
+        function addcar(){
+            if (!(carname.val() && image.val() && numplate.val() && driver.val() && driverphone.val())){
+                error.html('Please fill all data');
             }else{
-                $.post('loginadmin.php', {
-                    email: email.val(),
-                    pwd: pwd.val()
+
+                $.post('adddetails.php', {
+                    carname: carname.val(),
+                    image: image.val(),
+                    numplate: numplate.val(),
+                    driver: driver.val(),
+                    phone: driverphone.val(),
+                    ppd: ppd.val(),
+                    ppkm: ppkm.val(),
+                    loc: loc.val(),
+                    size: size.val()
                 }, function (result){
                     if(result==='SUCCESS'){
-                        error.empty();
-                        success.html("User Logged in");
-                        alert(result);
-                        window.location.href='index.php'
+                        success.html("DATA ADDED SUCCESSFULLY");
+                        alert('DATA ADDED SUCCESSFULLY');
                     }else{
                         error.html(result);
                     }
                 })
+
             }
+
+
+        }
+
+        function addimage(){
+            let msg='';
+            var formData = new FormData();
+            formData.append('image', image[0].files[0]);
+
+            $.ajax({
+                url : 'uploadimg.php',
+                type : 'POST',
+                data : formData,
+                processData: false,  // tell jQuery not to process the data
+                contentType: false,  // tell jQuery not to set contentType
+                success : function(data) {
+
+                    console.log(data);
+                    if(data==='SUCCESSS'){
+                        addcar();
+                    }else{
+                        error.html('IMAGE NOT UPLOADED');
+                    }
+                }
+            });
         }
     </script>
     </html>
