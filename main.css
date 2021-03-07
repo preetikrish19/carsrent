@@ -11,7 +11,7 @@
     background: url("jumbotron.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .btn-dark{
