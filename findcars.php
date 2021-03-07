@@ -94,22 +94,22 @@
             </ul>
         </div>
     </nav>
-    <div class="container d-flex align-items-center justify-content-center">
+    <div class="container d-flex align-items-center justify-content-center" id="searchbar">
 		<div class="row">
 			<div class="box">
 				<header class="text-center col-12">
 					<div class="heading">	<h2 style="opacity: 1" class="text-uppercase"> SEARCH YOUR CAR</h2></div>
           <form class="rental" action="index.php" method="post">
-            <label for="pickup">Enter your pick-Up location:</label>
-            <select id="pickup" name="pickup">
+            <label for="loc">Enter your pick-Up location:</label>
+            <select id="loc" name="loc">
               <option value="guindy">Guindy</option>
               <option value="chepauk">Chepauk</option>
               <option value="ashoknagar">Ashok Nagar</option>
               <option value="tambaram">tambaram</option>
             </select>
             
-            <label for="seats">Car type</label>
-            <select id="pickup" name="pickup">
+            <label for="size">Car type</label>
+            <select id="size" name="size">
               <option value="micro">Micro</option>
               <option value="=mini">Mini</option>
               <option value="suv"> SUV </option>
@@ -117,13 +117,29 @@
           </form>
 				</header>
 				<section class="text-center col-12">
-					<hr><a href="https://mailchi.mp/2161d41567c2/subscription">
-					<button type="button" class="btn btn-info btn-m">FIND OUT MORE</button></a>
+					<hr>
+					<button type="button" class="btn btn-info btn-m" onclick="loadCars()">FIND OUT MORE</button>
 				</section>
 			</div>
 		</div>
 	</div>
 
+  <div id="data" class="container">
+
+  </div>
 
   </body>
+  <script>
+
+      function loadCars(){
+          let loc = $('#loc');
+          let size = $('#size');
+          $.post('admins/loadcardata.php', {
+              loc: loc.val(),
+              size: size.val()
+          }, function (result){
+              $('#data').html(result);
+          });
+      }
+  </script>
 </html>
