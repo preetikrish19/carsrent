@@ -15,7 +15,6 @@ session_start();
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link href="logo.jpg" rel="icon">
-
 </head>
 
 <body style="background: #ABA6A6">
