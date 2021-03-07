@@ -27,32 +27,44 @@ if(isset($_SESSION['userid'])){
 
 <header>
       <div class="jumbotron text-white jumbotron-image shadow" >
-        <nav class="navbar navbar-expand-md navbar-dark">
 
-            <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RAC</h1></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <nav class="navbar navbar-expand-md navbar-dark">
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto pd-2">
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-dark btn-lg" href="menu.php">Menu</a>
-                    </li>
+              <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentAcaR.com</h1></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
 
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-dark btn-lg" href="cart.php">Cart</a>
-                    </li>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav ml-auto pd-2">
+                      <li class="nav-item">
+                          <a class="nav-link btn btn-dark btn-lg" href="findcars.php">Find a car</a>
+                      </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-dark btn-lg" href="#contact-us">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-dark btn-lg" href="login.php">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+
+                      <li class="nav-item">
+                          <a class="nav-link btn btn-dark btn-lg" href="#contact-us">Contact Us</a>
+                      </li>
+
+
+                      <li class="nav-item">
+                          <?php
+                          if(isset($_SESSION['username'])){
+                              ?>
+                              <a class="nav-link btn btn-dark btn-lg" href="logout.php">Logout</a>
+
+                              <?php
+                          }else{
+                              ?>
+                              <a class="nav-link btn btn-dark btn-lg" href="login.php">Login</a>
+
+                              <?php
+                          }
+                          ?>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
         <h1 class="display-3 text-center" id="hmb">
             Login - Rent a car
         </h1>
@@ -79,7 +91,6 @@ if(isset($_SESSION['userid'])){
 
                         <button type="button" class="btn btn-primary submit" name="login" onclick="verifyLogin()">Login</button>
                         <a type="button" class="btn btn-success submit" href="signup.php" >Sign Up</a>
-                        <a type="button" class="btn btn-danger submit" href="forgot.php">Forgot Password</a>
                     </form>
                 </div>
 

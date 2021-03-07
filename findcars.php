@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="main.css" rel="stylesheet">
     <link href="logo.jpg" rel="icon">
     <style>
       body{
@@ -60,20 +61,9 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto pd-2">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-dark btn-lg" href="menu.php">Menu</a>
+                    <a class="nav-link btn btn-dark btn-lg" href="findcars.php">Find a car</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link btn btn-dark btn-lg" href="cart.php"><?php
-                        if(isset($_SESSION['username'])){
-                            echo $_SESSION['username']."'s ";
-                        }
-                    ?>Cart</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link btn btn-dark btn-lg" href="#contact-us">Contact Us</a>
-                </li>
 
 
                 <li class="nav-item">
@@ -127,6 +117,7 @@
   <div id="data" class="container">
 
   </div>
+
 
   </body>
   <script>
