@@ -107,6 +107,7 @@
               <option value="ashoknagar">Ashok Nagar</option>
               <option value="tambaram">tambaram</option>
             </select>
+            
             <label for="seats">Car type</label>
             <select id="pickup" name="pickup">
               <option value="micro">Micro</option>
