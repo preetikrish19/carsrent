@@ -52,7 +52,7 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-dark">
 
-        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentAcaR.com</h1></a>
+        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentACar.com</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -107,7 +107,7 @@
               <option value="ashoknagar">Ashok Nagar</option>
               <option value="tambaram">tambaram</option>
             </select>
-            
+
             <label for="size">Car type</label>
             <select id="size" name="size">
               <option value="micro">Micro</option>

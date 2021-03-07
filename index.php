@@ -23,7 +23,7 @@ session_start();
 <div class="jumbotron text-white jumbotron-image shadow" id="top" >
     <nav class="navbar navbar-expand-md navbar-dark">
 
-        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentAcaR.com</h1></a>
+        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentACar.com</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -66,7 +66,7 @@ session_start();
         </div>
     </nav>
 
-    <h1 class="display-3 text-center" id="hmb">
+    <h1 class="display-3 text-center" id="hmb" style="color: black;">
         Rent A Car!!!
     </h1>
     <p class="push-spaces"></p>
@@ -80,10 +80,10 @@ session_start();
                 <h2>VISION</h2>
 
                 <p>Legacy aspires to be the choice car lease and rental company both nationally and across our borders.
-                We offer both excellence and reputable services among the Corporate, NGO, GoK and foreign investors that have a high appetite for 
-                semi-executive and executive vehicles that ensure and sustain their corporate image on our roads. 
+                We offer both excellence and reputable services among the Corporate, NGO, GoK and foreign investors that have a high appetite for
+                semi-executive and executive vehicles that ensure and sustain their corporate image on our roads.
                 We also offer project management fleet solutions and geographic consulting. <br>
-                Legacy thrives on the fact that we stand in the balance between you getting there and how you get there.   
+                Legacy thrives on the fact that we stand in the balance between you getting there and how you get there.
                 </div>
         </div>
         <div class="col-md-6 mt-3">
@@ -93,7 +93,7 @@ session_start();
                 We provide vehicles to organizations with very reasonable contracts. We can also manage your fleet for you; keeping track of the vehicles and drivers, monitoring fuel costs and mileage, and maintenance of the fleet.<br>
                 Going out into the wild will require vehicles that are in great condition and capable of handling the rugged terrain of nature. With one of our 4-wheel-drive SUVs you are guaranteed for an enjoyable and stress-free safari.<br>
                 All our vehicles are properly maintained, have enough spare tires and first aid kits to ensure that your trip is as smooth and enjoyable as possible.
-                </p>    
+                </p>
                 </div>
         </div>
     </div>
