@@ -14,7 +14,7 @@ session_start();
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link href="logo.jpg" rel="icon">
+    <link href="currlogo.png" rel="icon">
 </head>
 
 <body style="background: #ABA6A6">
@@ -102,7 +102,7 @@ session_start();
 
 
 <div class="container text-center text-light p-2" style="background: #B68989">
-    <h2>Reviews</h2>
+    <h2></h2>
     <div class="text-center">
         <div id="demo" class="container mx-auto carousel slide mt-2 p-2" data-ride="carousel">
 
