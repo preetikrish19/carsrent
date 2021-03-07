@@ -22,14 +22,14 @@ if(isset($_SESSION['userid'])){
 
 </head>
 
-<body style="background: #FF9671">
+<body style="background: #3e444f">
 <div class="container-fluid p-0">
 
 <header>
-    <div class="jumbotron text-white jumbotron-image shadow" >
+      <div class="jumbotron text-white jumbotron-image shadow" >
         <nav class="navbar navbar-expand-md navbar-dark">
 
-            <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>HMB</h1></a>
+            <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RAC</h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,9 +53,8 @@ if(isset($_SESSION['userid'])){
                 </ul>
             </div>
         </nav>
-
         <h1 class="display-3 text-center" id="hmb">
-            Login - Hotel Muruga Bhavan
+            Login - Rent a car
         </h1>
         <p class="push-spaces"></p>
     </div>

@@ -11,7 +11,8 @@
     background: url("background.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    height: 35em;
 }
 
 .btn-dark{
