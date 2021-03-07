@@ -18,7 +18,7 @@ if(isset($_SESSION['userid'])){
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link href="logo.jpg" rel="icon">
+    <link href="currlogo.jpg" rel="icon">
 
 </head>
 
@@ -27,45 +27,33 @@ if(isset($_SESSION['userid'])){
 
 <header>
       <div class="jumbotron text-white jumbotron-image shadow" >
+        <nav class="navbar navbar-expand-md navbar-dark">
 
-          <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RAC</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-              <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentAcaR.com</h1></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto pd-2">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark btn-lg" href="menu.php">Menu</a>
+                    </li>
 
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                  <ul class="navbar-nav ml-auto pd-2">
-                      <li class="nav-item">
-                          <a class="nav-link btn btn-dark btn-lg" href="findcars.php">Find a car</a>
-                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark btn-lg" href="cart.php">Cart</a>
+                    </li>
 
-
-                      <li class="nav-item">
-                          <a class="nav-link btn btn-dark btn-lg" href="#contact-us">Contact Us</a>
-                      </li>
-
-
-                      <li class="nav-item">
-                          <?php
-                          if(isset($_SESSION['username'])){
-                              ?>
-                              <a class="nav-link btn btn-dark btn-lg" href="logout.php">Logout</a>
-
-                              <?php
-                          }else{
-                              ?>
-                              <a class="nav-link btn btn-dark btn-lg" href="login.php">Login</a>
-
-                              <?php
-                          }
-                          ?>
-                      </li>
-                  </ul>
-              </div>
-          </nav>
-        <h1 class="display-3 text-center" id="hmb">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark btn-lg" href="#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark btn-lg" href="login.php">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="display-3 text-center" id="hmb" style="color: black;">
             Login - Rent a car
         </h1>
         <p class="push-spaces"></p>
@@ -100,7 +88,7 @@ if(isset($_SESSION['userid'])){
     <div class="jumbotron text-center bg-dark text-light" style="margin-bottom:0" id="contact-us">
         <div class="row">
             <div class="col-lg-6">
-                <h3>Hotel Muruga Bhavan</h3>
+                <h3>RentAcaR.com</h3>
                 <p>35, Adyar Main Road,<br>Madhya Kailash, <br> Chennai.<br><br>
                     <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919432112345" >+91 94321 12345</a><br>
                     <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >hmb@email.com</a><br>
