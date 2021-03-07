@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2021 at 11:55 AM
+-- Generation Time: Mar 07, 2021 at 01:12 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.14
 
@@ -46,7 +46,7 @@ CREATE TABLE `car_details` (
 --
 
 INSERT INTO `car_details` (`car_id`, `carname`, `image`, `numplate`, `driver`, `phone`, `ppd`, `ppkm`, `loc`, `size`) VALUES
-(1, 'xDA', 'C:\\fakepath\\file-20200508-49546-dx6y3a.jpg', 'ASDF', '1234', '123', 12, 12, 'guindy', 'micro');
+(1, 'xDA', 'file-20200508-49546-dx6y3a.jpg', 'ASDF', '1234', '123', 12, 12, 'guindy', 'micro');
 
 --
 -- Indexes for dumped tables
