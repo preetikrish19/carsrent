@@ -15,10 +15,9 @@ session_start();
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link href="logo.jpg" rel="icon">
-
 </head>
 
-<body style="background: #FF9671">
+<body style="background: #ABA6A6">
 <div class="container-fluid p-0">
 <header>
 <div class="jumbotron text-white jumbotron-image shadow" id="top" >
@@ -77,35 +76,33 @@ session_start();
 <div class="container" style="margin-top:30px">
     <div class="row">
         <div class="col-md-6 mt-3">
-            <div class="card text-light p-4 " style="background:#4B4453">
-                <h2>LEGACY</h2>
+            <div class="card text-light p-4 " style="background:#807C7C">
+                <h2>VISION</h2>
 
-                <p>Four decades ago, a small sweet shop was started by Late K.S. Palani Raja, in the metropolis of Chennai. This same shop has now flowered into multiple branches that dot the length and breadth of Chennai as well as its neighbouring cities.
-
-                    <br>M/s. Hotel Muruga Bhavan is now a well-established brand in Southern India that continues to grow with a vision to capture the global market. The baton of this sweet legacy was passed on by K.S. Palani Raja to his sons, Mr. K.P. Murugan and Mr. K.P. Shanmughan who now act as the driving force behind HMB.</p>
-                <p>We at HMB follow the perfect formula for success. Delicious food prepared under extremely hygienic conditions, served in a clean environment with a lot of passion and the reasonable pricing is the perfect answer to our gourmet, budget conscious customer.<br>
-                    A menu of over 350 dishes in 10 categories, prepared to exacting standards and serving 100,000  customers across all the outlets, is a testimony to the impeccable quality and taste that our Hote Muruga Bhavan is famous for.</p>
-            </div>
+                <p>Legacy aspires to be the choice car lease and rental company both nationally and across our borders.
+                We offer both excellence and reputable services among the Corporate, NGO, GoK and foreign investors that have a high appetite for 
+                semi-executive and executive vehicles that ensure and sustain their corporate image on our roads. 
+                We also offer project management fleet solutions and geographic consulting. <br>
+                Legacy thrives on the fact that we stand in the balance between you getting there and how you get there.   
+                </div>
         </div>
         <div class="col-md-6 mt-3">
-            <div class="card text-light p-4" style="background:#845EC2">
-                <h2>A NETWORK OF SUCCESS</h2>
-
-                <p>
-                    The Indian Cuisine is as diverse as its culture, languages, regions and its climate. Every major region of India brings its own unique dishes and subtle variations to popular dishes. <br>Aromatic Spices are the essence of Indian cuisine.<br>
-                    This is the unique formula, we at Hotel Muruga Bhavan, chain of Indian vegetarian restaurants follow, to build our businesses across the globe.</p>
-                <p>We ensure our customers are our strength and make them feel at home when they are with us. An outlet to be great with friends or all by yourself.<br>
-                    You can eat in, take it to go, or have it catered right to you. The feeling is friendly and the food is fabulous.<br> Whenever you need it, wherever you need it, it is your own unique world to eat out.<br>
-                    Our services include Fast Food, Take Away, Home Delivery, Outdoor Catering, Party Orders and more.</p>
-            </div>
+            <div class="card text-light p-4" style="background:#581E3A">
+                <h2>SERVICES</h2>
+                <p>We provide a variety of top-of-the-range vehicles based on what you need.<br>
+                We provide vehicles to organizations with very reasonable contracts. We can also manage your fleet for you; keeping track of the vehicles and drivers, monitoring fuel costs and mileage, and maintenance of the fleet.<br>
+                Going out into the wild will require vehicles that are in great condition and capable of handling the rugged terrain of nature. With one of our 4-wheel-drive SUVs you are guaranteed for an enjoyable and stress-free safari.<br>
+                All our vehicles are properly maintained, have enough spare tires and first aid kits to ensure that your trip is as smooth and enjoyable as possible.
+                </p>    
+                </div>
         </div>
     </div>
     <p class="push-spaces"></p>
 </div>
 
 
-<div class="container text-center text-light p-2" style="background: #008B74">
-    <h2>Gallery</h2>
+<div class="container text-center text-light p-2" style="background: #B68989">
+    <h2>Reviews</h2>
     <div class="text-center">
         <div id="demo" class="container mx-auto carousel slide mt-2 p-2" data-ride="carousel">
 
@@ -119,19 +116,19 @@ session_start();
 
             <div class="carousel-inner mx-auto">
                 <div class="carousel-item active">
-                    <img class="img-fluid" src="idli.jpg" alt=Idli">
+                    <img class="img-fluid" src="car2.jpg" alt=>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="dosa.jpg" alt="Dosa">
+                    <img class="img-fluid" src="car3.jpg" alt=>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="meals.jpg" alt="Meals">
+                    <img class="img-fluid" src="car4.jpg" alt=>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="pongal.jpg" alt="Pongal">
+                    <img class="img-fluid" src="car5.jpg" alt=>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="chappathi.jpg" alt="Chappathi">
+                    <img class="img-fluid" src="car6.jpg" alt=>
                 </div>
             </div>
 
@@ -149,10 +146,10 @@ session_start();
 <div class="jumbotron text-center bg-dark text-light" style="margin-bottom:0" id="contact-us">
     <div class="row">
         <div class="col-lg-6">
-            <h3>Hotel Muruga Bhavan</h3>
+            <h3>RentAcaR.com</h3>
             <p>35, Adyar Main Road,<br>Madhya Kailash, <br> Chennai.<br><br>
                 <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919432112345" >+91 94321 12345</a><br>
-                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >hmb@email.com</a><br>
+                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >rentacar@email.com</a><br>
             </p>
         </div>
         <div class="col-lg-6">

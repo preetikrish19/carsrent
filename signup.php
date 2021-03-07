@@ -58,14 +58,12 @@
                     <label for="pwd">Reenter Password</label>
                     <input type="password" class="form-control" placeholder="Reenter password" id="repass" name="repass">
                 </div>
-
                 <button type="button" class="btn btn-primary submit" name="submit" onclick="addUser()">Sign Up</button>
                 <a type="button" class="btn btn-success submit" href="login.php" >Login Existing Customer</a>
             </form>
         </div>
     </div>
 </div>
-
 <script>
     function addUser(){
         var user= $('#name');
@@ -74,7 +72,6 @@
         var repwd = $('#repass');
         var error = $('#error');
         var success = $('#success')
-
         if(!(user.val() && email.val() && pwd.val() && repwd.val())){
             error.html("Please fill all the data");
         } else {
