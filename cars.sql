@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2021 at 01:35 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.3.14
+-- Generation Time: Mar 07, 2021 at 01:54 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -46,7 +45,12 @@ CREATE TABLE `car_details` (
 --
 
 INSERT INTO `car_details` (`car_id`, `carname`, `image`, `numplate`, `driver`, `phone`, `ppd`, `ppkm`, `loc`, `size`) VALUES
-(1, 'xDA', 'file-20200508-49546-dx6y3a.jpg', 'ASDF', '1234', '123', 12, 12, 'guindy', 'micro');
+(1, 'xDA', 'file-20200508-49546-dx6y3a.jpg', 'ASDF', '1234', '123', 12, 12, 'guindy', 'micro'),
+(11, 'Dzire', 'C:\\fakepath\\car2.jpg', 'AZXC', 'Ram', '9874563258', 1000, 100, 'guindy', 'micro'),
+(12, 'Swift', 'C:\\fakepath\\car.png', 'AZSS', 'Raghu', '897456965', 1500, 200, 'ashoknagar', 'suv'),
+(13, 'Baleno', 'C:\\fakepath\\car2.jpg', 'AQWE', 'Sekhar', '998877445', 1200, 33, 'chepauk', 'micro'),
+(14, 'Dzire', 'C:\\fakepath\\car3.jpg', 'AWER', 'Mani', '8895966874', 1400, 300, 'tambaram', 'mini'),
+(15, 'Grandi10', 'C:\\fakepath\\car4.jpg', 'AQQW', 'John', '9874569874', 1500, 300, 'ashoknagar', 'suv');
 
 -- --------------------------------------------------------
 
@@ -93,7 +97,7 @@ ALTER TABLE `passengers`
 -- AUTO_INCREMENT for table `car_details`
 --
 ALTER TABLE `car_details`
-  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
