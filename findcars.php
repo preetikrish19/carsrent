@@ -53,7 +53,7 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-dark">
 
-        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentACar.com</h1></a>
+        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>FindACar.com</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -88,7 +88,7 @@
 		<div class="row">
 			<div class="box">
 				<header class="text-center col-12">
-					<div class="heading">	<h2 style="opacity: 1" class="text-uppercase"> SEARCH YOUR CAR</h2></div>
+					<div class="heading">	<h2 style="opacity: 1" class="text-uppercase">Enter Your Destination</h2></div>
           <form class="rental" action="index.php" method="post">
             <label for="loc">Enter your pick-Up location:</label>
             <select id="loc" name="loc">

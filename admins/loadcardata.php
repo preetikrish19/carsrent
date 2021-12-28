@@ -36,7 +36,7 @@ if(isset($_POST['loc'])){
                     <?php
                         if($loc!='all'){
                             ?>
-                            <button type="button" class="btn btn-primary submit" onclick="rentcar(<?php $data['carid'];?>)">add car</button>
+                            <button type="button" class="btn btn-primary submit" onclick="rentcar(<?php $data['carid'];?>)">Book Cab</button>
                             <?php
                         }
                     ?>

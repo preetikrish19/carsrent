@@ -23,7 +23,7 @@ session_start();
 <div class="jumbotron text-white jumbotron-image shadow" id="top" >
     <nav class="navbar navbar-expand-md navbar-dark">
 
-        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>RentACar.com</h1></a>
+        <a class="navbar-brand btn btn-dark btn-lg" href="index.php" ><h1>FindACar.com</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -60,7 +60,7 @@ session_start();
     </nav>
 
     <h1 class="display-3 text-center" id="hmb" style="color: black;">
-        Rent A Car!!!
+        Find A Car!!!
     </h1>
     <p class="push-spaces"></p>
 </div>
@@ -139,10 +139,10 @@ session_start();
 <div class="jumbotron text-center bg-dark text-light" style="margin-bottom:0" id="contact-us">
     <div class="row">
         <div class="col-lg-6">
-            <h3>RentAcaR.com</h3>
+            <h3>FindAcaR.com</h3>
             <p>35, Adyar Main Road,<br>Madhya Kailash, <br> Chennai.<br><br>
                 <span class="material-icons" style="font-size: 16px;">call</span> <a href="callto:+919432112345" >+91 94321 12345</a><br>
-                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >rentacar@email.com</a><br>
+                <span class="material-icons" style="font-size: 16px;">email</span><a href="mailto: hmb@email.com" >findacar@email.com</a><br>
             </p>
         </div>
         <div class="col-lg-6">
