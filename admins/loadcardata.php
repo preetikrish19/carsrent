@@ -9,7 +9,6 @@ if(isset($_POST['loc'])){
     }else{
         $query = "SELECT * FROM car_details WHERE loc='$loc' AND size='$size'";
     }
-
     if($result = $con->query($query)){
         ?>
         <div class = 'row'>
@@ -53,6 +52,8 @@ if(isset($_POST['loc'])){
     }else{
         echo $con->error;
     }
-}else {
+ }
+else 
+   {
     echo "NOT VIEWABLE";
-}
+   }

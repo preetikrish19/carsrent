@@ -45,6 +45,7 @@ session_start();
                     if(isset($_SESSION['username'])){
                         ?>
                         <a class="nav-link btn btn-dark btn-lg" href="logout.php">Logout</a>
+                        <a class="nav-link btn btn-dark btn-lg" href="profile.php">Profile</a>
 
                         <?php
                     }else{
