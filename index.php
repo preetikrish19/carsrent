@@ -50,8 +50,8 @@ session_start();
                         <?php
                     }else{
                         ?>
-                        <a class="nav-link btn btn-dark btn-lg" href="login.php">Login</a>
-
+                        <a class="nav-link btn btn-dark btn-lg" href="login.php">Passenger Login</a>
+                        <a class="nav-link btn btn-dark btn-lg" href="driverlogin.php">Driver Login</a>
                         <?php
                     }
                     ?>
