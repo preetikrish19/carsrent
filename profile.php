@@ -2,9 +2,8 @@
 session_start();
 include('db.php');
 $query = "SELECT * FROM passengers WHERE name=$_SESSION[username]";
-$query1="SELECT * FROM travel 
-LEFT JOIN car_details ON travel.did = car_details.car_id WHERE pname=$_SESSION[username]";
-  ?>
+$query1="SELECT * FROM travel LEFT JOIN drivers ON travel.did=drivers.driver_id WHERE pname=$_SESSION[username]";
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -116,7 +115,7 @@ tr:nth-child(even) {
            if($result = $con->query($query)){
     ?>
     <?php
-     while($data = $result->fetch_assoc()){
+     $data = $result->fetch_assoc();
         ?>
      <div class="card">
   <p>NAME :<?php echo $data['name']?></p><input type="text" id="name" name="name"><br>
@@ -125,7 +124,7 @@ tr:nth-child(even) {
   <p>PHONE NUMBER : <?php echo $data['phone']?></p><input type="text" id="phone" name="phone"><br>
   <input type="submit" value="SAVE">
 </div>
-        <?php }}?>
+        <?php }?>
        
 <table class="center">
 <?php if($result1 = $con->query($query1)){

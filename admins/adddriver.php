@@ -3,11 +3,17 @@ session_start();
 if(isset($_POST['email'])) {
     include 'db.php';
     $name = $con->real_escape_string( $_POST['name']);
-    $car_type = $_POST['car_type'];
+    $car_type = $con->real_escape_string($_POST['car_type']);
     $passwd = $con->real_escape_string( $_POST['passwd']);
     $email = $con->real_escape_string($_POST['email']);
+    $car_name = $con->real_escape_string($_POST['car_name']);
+    $loc= $con->real_escape_string( $_POST['loc']);
+    $numplate = $con->real_escape_string($_POST['numplate']);
 
-    $query = "INSERT INTO passengers (name,car_type, passwd, email) VALUES ('$name', $car_type, '$passwd', '$email')";
+    $_SESSION['username'] = $name;
+    $_SESSION['email']= $email;
+    $query = "INSERT INTO drivers (name,car_type, passwd, email,loc,numplate,car_name) 
+    VALUES ('$name', '$car_type', '$passwd', '$email','$loc','$numplate','$car_name')";
     if ($con->query($query)) {
         echo "SUCCESS";
     } else {

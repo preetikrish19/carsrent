@@ -46,10 +46,21 @@
                     <input type="text" class="form-control" placeholder="Enter your name" id="name" name="name">
                  </div>              
                 <div class="form-group">
+                    <label for="car_name">CAR NAME</label>
+                    <input type="text" id="car_name" class="form-control" name="car_name">
+                </div>
+                <div class="form-group">
                     <label for="car_type">CAR TYPE</label>
                     <input type="text" id="car_type" class="form-control" name="car_type">
                 </div>
                 <div class="form-group">
+                    <label for="numplate">NUMBER PLATE</label>
+                    <input type="text" id="numplate" class="form-control" name="numplate">
+                </div>
+                <div class="form-group">
+                    <label for="loc">LOCATION</label>
+                    <input type="text" id="loc" class="form-control" name="loc">
+                </div>                <div class="form-group">
                     <label for="passwd">Password:</label>
                     <input type="password" class="form-control" placeholder="Enter password" id="passwd" name="passwd">
                 </div>
@@ -69,6 +80,9 @@
     var passwd = $('#passwd');
     var repwd = $('#repass');
     var car_type = $('#car_type');
+    var car_name = $('#car_name');
+    var loc = $('#loc');
+    var numplate= $('#numplate');
     var error = $('#error');
     var success = $('#success');
 
@@ -84,6 +98,9 @@
                     name: user.val(),
                     email: email.val(),
                     passwd: passwd.val(),
+                    car_name: car_name.val(),
+                    loc: loc.val(),
+                    numplate: numplate.val(),
                     car_type: car_type.val(),
                       }, function (result){
                     if(result==='SUCCESS'){

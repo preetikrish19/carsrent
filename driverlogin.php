@@ -111,13 +111,13 @@ if(isset($_SESSION['userid'])){
         }else{
             $.post('driverlogincheck.php', {
                 email: email.val(),
-                pwd: pwd.val()
+                passwd: pwd.val()
             }, function (result){
                 if(result==='SUCCESS'){
                     error.empty();
                     success.html("User Logged in");
                     alert(result);
-                    window.location.href='index.php'
+                    window.location.href='driverportal.php'
                 }else{
                     error.html(result);
                 }

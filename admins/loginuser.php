@@ -10,6 +10,7 @@ if(isset($_POST['email'])) {
         $row = $result->fetch_assoc();
         if ($pwd == $row['pwd']) {
             $_SESSION['username'] = $row['name'];
+            $_SESSION['email']=$row['email'];
             echo "SUCCESS";
         } else {
             echo 'Incorrect Password';

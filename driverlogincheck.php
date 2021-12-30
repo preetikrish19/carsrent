@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_POST['email'])) {
-    include 'db.php';
+    include "admins/db.php";
     $email = $con->real_escape_string($_POST['email']);
     $passwd = $con->real_escape_string( $_POST['passwd']);
 
@@ -10,6 +10,7 @@ if(isset($_POST['email'])) {
         $row = $result->fetch_assoc();
         if ($passwd == $row['passwd']) {
             $_SESSION['username'] = $row['name'];
+            $_SESSION['email']=$row['email'];
             echo "SUCCESS";
         } else {
             echo 'Incorrect Password';

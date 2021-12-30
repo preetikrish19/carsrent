@@ -11,7 +11,9 @@ if(isset($_POST['email'])) {
     $query = "INSERT INTO passengers (name, phone, pwd, age, email) VALUES ('$name', $phone, '$pwd', $age, '$email')";
     if ($con->query($query)) {
         echo "SUCCESS";
-    } else {
+        $_SESSION['username']=$name;
+        $_SESSION['email']=$email;
+        } else {
         echo $con->error;
     }
 }else{
