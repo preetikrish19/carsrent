@@ -96,13 +96,15 @@
               <option value="chepauk">Chepauk</option>
               <option value="ashoknagar">Ashok Nagar</option>
               <option value="tambaram">tambaram</option>
+              <option value="all">All</option>
             </select>
 
-            <label for="size">Car type</label>
-            <select id="size" name="size">
+            <label for="car_type">Car type</label>
+            <select id="car_type" name="car_type">
               <option value="micro">Micro</option>
               <option value="=mini">Mini</option>
-              <option value="suv"> SUV </option>
+              <option value="suv"> XUV </option>
+              <option value="all"> All </option>
             </select>
           </form>
 				</header>
@@ -124,10 +126,10 @@
 
       function loadCars(){
           let loc = $('#loc');
-          let size = $('#size');
+          let car_type = $('#car_type');
           $.post('admins/loadcardata.php', {
               loc: loc.val(),
-              size: size.val()
+              car_type: car_type.val()
           }, function (result){
               $('#data').html(result);
           });

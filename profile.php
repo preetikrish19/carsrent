@@ -144,7 +144,7 @@ foreach($details as $data1){
     <td><?php echo $data1['pick']?></td>
     <td><?php echo $data1['dest']?></td>
     <td><?php echo $data1['driver']?></td>
-    <td><?php echo $data1['size']?></td>
+    <td><?php echo $data1['car_type']?></td>
   </tr>
   </table>
   <?php}}?>
