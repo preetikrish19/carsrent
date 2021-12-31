@@ -36,17 +36,10 @@ if(isset($_SESSION['userid'])){
 
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ml-auto pd-2">
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-dark btn-lg" href="findcars.php">Find Cars</a>
-                    </li>
-
-                    <li class="nav-item">
+                      <li class="nav-item">
                         <a class="nav-link btn btn-dark btn-lg" href="#contact-us">Contact Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-dark btn-lg" href="login.php">Login</a>
-                    </li>
-                </ul>
+                                   </ul>
             </div>
         </nav>
         <h1 class="display-3 text-center" id="hmb" style="color: black;">

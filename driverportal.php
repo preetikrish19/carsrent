@@ -38,9 +38,7 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link btn btn-dark btn-lg" href="#contact-us">Contact Us</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-dark btn-lg" href="logout.php">Logout</a>
-                </li>
+               
 
 
                 <li class="nav-item">
