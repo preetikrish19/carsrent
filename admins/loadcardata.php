@@ -20,10 +20,13 @@ else{
             <div class="card">
                 <div class="card-header"><?php echo $data['car_name']?></div>
                 <div class="card-body">
+                    <div class="float-left">
+                        <img src="icon.jpg" alt="">
+                       </div>
                     <div class="float-right">
                     <p>NumPlate: <?php echo $data['numplate']?></p>
                     <p>Driver Name: <?php echo $data['name']?></p>
-                    <p>Driver Phone: <?php echo $data['phone']?></p>
+                <!--    <p>Driver Phone: <?php //echo $data['phone']?></p> -->
                     <p>Location: <?php echo $data['loc']?></p>
                     <p>Type of Car: <?php echo $data['car_type']?></p>
                     </div>
@@ -32,7 +35,7 @@ else{
                      <?php
                if($loc!='all'){
                            ?>
-                            <button type="button" href="payment.php" class="btn btn-primary submit" onclick="rentcar(<?php $data['carid'];?>)">Book Cab</button>
+                            <button type="button"  class="btn btn-primary submit" onclick="rentcar(<?php $data['driver_id'];?>)">Book Cab</button>
                        <?php
                }
                    ?>

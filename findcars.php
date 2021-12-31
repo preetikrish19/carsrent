@@ -85,17 +85,17 @@
           <form class="rental" action="index.php" method="post">
             <label for="loc">Enter your pick-Up location:</label>
             <select id="loc" name="loc">
-              <option value="guindy">Guindy</option>
-              <option value="chepauk">Chepauk</option>
-              <option value="ashoknagar">Ashok Nagar</option>
-              <option value="tambaram">tambaram</option>
+              <option value="Guindy">Guindy</option>
+              <option value="Chepauk">Chepauk</option>
+              <option value="Ashoknagar">Ashok Nagar</option>
+              <option value="Tambaram">tambaram</option>
               <option value="all">All</option>
             </select>
 
             <label for="car_type">Car type</label>
             <select id="car_type" name="car_type">
-              <option value="micro">Micro</option>
-              <option value="=mini">Mini</option>
+              <option value="Micro">Micro</option>
+              <option value="=Mini">Mini</option>
               <option value="suv"> XUV </option>
               <option value="all"> All </option>
             </select>
