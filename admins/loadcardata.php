@@ -5,6 +5,9 @@ if(isset($_POST['loc'])){
     $loc = $_POST['loc'];
     $car_type= $_POST['car_type'];
     $dloc = $_POST['dloc'];
+    $query1 = "SELECT request FROM travel WHERE pname='$_SESSION[username]'";
+    $result1 = $con->query($query1);
+    $data1 = $result1->fetch_assoc();
    if($loc=='all' && $car_type =='all'){
      $query = "SELECT * FROM drivers;";
  }
@@ -34,6 +37,14 @@ else{
                     </div>
                 </div>
                 <div class="card-footer">
+                <div class="float-right">
+                    <?php if($data1['request']==0){?>
+                          <p>WAITING...</p>
+                        <?php } 
+                        else {?>  
+                          <img src="accept.jpg" alt="" width="30%" height="20%">  
+                           <?php } ?>
+                  </div>
                      <?php
                if($loc!='all'){
                            ?>
