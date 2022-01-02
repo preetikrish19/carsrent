@@ -37,19 +37,25 @@ else{
                     </div>
                 </div>
                 <div class="card-footer">
-                <div class="float-right">
-                    <?php if($data1['request']==0){?>
+                <div class="float-left">
+                            <?php if($data1['request']==0){?>
                           <p>WAITING...</p>
                         <?php } 
                         else {?>  
-                          <img src="accept.jpg" alt="" width="30%" height="20%">  
+                          <img src="accept.jpg" alt="" width="10%" height="10%">  
+                          <a href="payment.php"><img src="pay.png" width="30%" height="30%"></a>
                            <?php } ?>
-                  </div>
+                        </div>
+        
                      <?php
+                     
                if($loc!='all'){
                            ?>
                             <!--<button id="button1" type="button"  class="btn btn-primary submit" onclick="bookCab(<?php echo $data['driver_id'];?>, '<?php echo $dloc;?>', '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>')">Book Cab</button>-->
+                            <div class="float-right">
+                        
                             <input onclick="bookCab(<?php echo $data['driver_id'];?>, '<?php echo $dloc;?>', '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>')" type="button" value="Book Cab" id="button1"></input>
+               </div>
                        <?php
                }
                    ?>
