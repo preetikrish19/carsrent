@@ -1,4 +1,6 @@
-<?php  ?>
+<?php  
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -99,6 +101,15 @@
               <option value="suv"> XUV </option>
               <option value="all"> All </option>
             </select>
+
+            <label for="loc">Enter your Drop location:</label>
+            <select id="dloc" name="dloc">
+              <option value="Guindy">Guindy</option>
+              <option value="Chepauk">Chepauk</option>
+              <option value="Ashoknagar">Ashok Nagar</option>
+              <option value="Tambaram">tambaram</option>
+              <option value="all">All</option>
+            </select>
           </form>
 				</header>
 				<section class="text-center col-12">
@@ -110,22 +121,26 @@
 	</div>
 
   <div id="data" class="container">
-
+        
   </div>
 
 
   </body>
   <script>
+      
 
       function loadCars(){
           let loc = $('#loc');
           let car_type = $('#car_type');
+          let dloc = $('#dloc');
           $.post('admins/loadcardata.php', {
               loc: loc.val(),
-              car_type: car_type.val()
+              car_type: car_type.val(),
+              dloc: dloc.val()
           }, function (result){
               $('#data').html(result);
           });
       }
+    
   </script>
 </html>

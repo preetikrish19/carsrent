@@ -11,6 +11,7 @@ if(isset($_POST['email'])) {
         if ($passwd == $row['passwd']) {
             $_SESSION['username'] = $row['name'];
             $_SESSION['email']=$row['email'];
+            $_SESSION['did'] = $row['driver_id'];
             echo "SUCCESS";
         } else {
             echo 'Incorrect Password';

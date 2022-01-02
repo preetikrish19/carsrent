@@ -1,5 +1,9 @@
 <?php
 session_start();
+include "admins/db.php";
+$did = $_SESSION['did'];
+$q = "SELECT * FROM travel WHERE did='$did' AND request=0";
+$result = $con->query($q);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,24 +82,18 @@ session_start();
     </tr>
   </thead>
   <tbody>
+  <?php 
+    while($row = $result->fetch_row())
+    {
+        //printf("%s \n", $row[2]);
+  ?>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td><?php echo $row[4];?></td>
+      <td><?php echo $row[2];?></td>
+      <td><?php echo $row[1];?></td>
+      <td><input id="<?php echo $row[0];?>" type="button" value="Accept" onclick="acceptRequest(<?php echo $row[0];?>)"></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    <?php }?>
   </tbody>
 </table>
 <footer class="mt-4">
@@ -117,7 +115,17 @@ session_start();
     <button onclick="topFunction()" id="myBtn" class="btn btn-danger"  title="Go to top"><i class="fa fa-arrow-up"></i> </button>
 
 </div>
-<script src="main.js">
+<script>
+function acceptRequest(trid)
+{
+    let tid=trid;
+    var x = document.getElementById(tid);
+    $.post('admins/acceptRequest.php', {tid: tid}, 
+            function (result){
+                alert(result);
+            });
+    if(x.value=="Accept") x.value=="Accepted";
+}
 </script>
 </body>
 </html>

@@ -1,14 +1,16 @@
 <?php
+session_start();
 if(isset($_POST['loc'])){
     include "db.php";
     $loc = $_POST['loc'];
     $car_type= $_POST['car_type'];
-    $query = '';
+    $dloc = $_POST['dloc'];
    if($loc=='all' && $car_type =='all'){
      $query = "SELECT * FROM drivers;";
  }
 else{
         $query = "SELECT * FROM drivers WHERE loc='$loc' AND car_type='$car_type'";
+        $_SESSION['dloc'] = $dloc;
 }
     if($result = $con->query($query)){
         ?>
@@ -35,7 +37,8 @@ else{
                      <?php
                if($loc!='all'){
                            ?>
-                            <button type="button"  class="btn btn-primary submit" onclick="rentcar(<?php $data['driver_id'];?>)">Book Cab</button>
+                            <!--<button id="button1" type="button"  class="btn btn-primary submit" onclick="bookCab(<?php echo $data['driver_id'];?>, '<?php echo $dloc;?>', '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>')">Book Cab</button>-->
+                            <input onclick="bookCab(<?php echo $data['driver_id'];?>, '<?php echo $dloc;?>', '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>')" type="button" value="Book Cab" id="button1"></input>
                        <?php
                }
                    ?>
@@ -58,3 +61,22 @@ else
 {
 echo "NOT VIEWABLE";
 }
+?>
+<script>
+    function bookCab(id, destloc, ploc, passname){
+          var x = document.getElementById("button1");
+          let dloc = destloc;
+          let loc = ploc;
+          let did = id;
+          let pname = passname;
+          $.post('admins/addTravel.php', {
+              dloc: dloc,
+              loc: loc,
+              did: did,
+              pname: pname
+          }, function (result){
+              alert(result);
+          });
+          if(x.value == "Book Cab") x.value = "Booked";
+      }
+</script>
