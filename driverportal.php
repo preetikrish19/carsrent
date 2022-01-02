@@ -1,8 +1,9 @@
 <?php
 session_start();
 include "admins/db.php";
-$did = $_SESSION['did'];
-$q = "SELECT * FROM travel WHERE did='$did' AND request=0";
+$did =$_SESSION['did'];
+$dname=$_SESSION['username'];
+$q="SELECT * FROM travel WHERE did='$did' AND request=0";
 $result = $con->query($q);
 ?>
 <!DOCTYPE html>
@@ -85,13 +86,13 @@ $result = $con->query($q);
   <?php 
     while($row = $result->fetch_row())
     {
-        //printf("%s \n", $row[2]);
   ?>
     <tr>
       <td><?php echo $row[4];?></td>
       <td><?php echo $row[2];?></td>
       <td><?php echo $row[1];?></td>
-      <td><input id="<?php echo $row[0];?>" type="button" value="Accept" onclick="acceptRequest(<?php echo $row[0];?>)"></td>
+      <td><input id="<?php echo $row[0];?>" type="button" value="Accept" 
+      onclick="add('<?php echo $dname;?>'); acc(<?php echo $row[0];?>);"></td>
     </tr>
     <?php }?>
   </tbody>
@@ -116,7 +117,7 @@ $result = $con->query($q);
 
 </div>
 <script>
-function acceptRequest(trid)
+function acc(trid)
 {
     let tid=trid;
     var x = document.getElementById(tid);
@@ -124,8 +125,19 @@ function acceptRequest(trid)
             function (result){
                 alert(result);
             });
-    if(x.value=="Accept") x.value=="Accepted";
+    if(x.value=="Accept") x.value="Accepted";
 }
+
+function add(dname)
+{
+    let dd=dname;
+    $.post('admins/add.php', 
+        {dd: dd}, 
+        function (result){
+            alert(result);
+        });
+}
+
 </script>
 </body>
 </html>

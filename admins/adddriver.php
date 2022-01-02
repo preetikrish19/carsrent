@@ -14,8 +14,6 @@ if(isset($_POST['email'])) {
     $_SESSION['email']= $email;
     $query = "INSERT INTO drivers (name,car_type, passwd, email,loc,numplate,car_name) 
     VALUES ('$name', '$car_type', '$passwd', '$email','$loc','$numplate','$car_name')";
-    $q="INSERT INTO reply (dname,req) VALUES('$name',-1)";
-    $res=$con->query($q);
     if ($con->query($query)) {
         echo "SUCCESS";
     } else {

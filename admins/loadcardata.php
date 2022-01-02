@@ -43,6 +43,7 @@ else{
                 <div class="float-left">
                 <?php if($data1['req']==0){?>
                          <p>WAITING...</p>
+                         
                         <?php }
                         if($data1['req']==1){?>  
                           <img src="accept.jpg" alt="" width="10%" height="10%">  
@@ -53,13 +54,14 @@ else{
         
                      <?php
                      
-               if($loc!='all'){
+               if($loc!='all' && $data1['req']==-1){
                            ?>
                             <!--<button id="button1" type="button"  class="btn btn-primary submit" onclick="bookCab(<?php echo $data['driver_id'];?>, '<?php echo $dloc;?>', '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>')">Book Cab</button>-->
                             <div class="float-right">
-                        
-                            <input onclick="bookCab(<?php echo $data['driver_id'];?>,'<?php echo $data['name'];?>','<?php echo $dloc;?>', '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>')" type="button" value="Book Cab" id="button1"></input>
-               </div>
+                            <input onclick="bookCab(<?php echo $data['driver_id'];?>,'<?php echo $dloc;?>', 
+                            '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>'); rep('<?php echo $dname;?>');" 
+                            type="button" value="Book Cab" id="button1"></input>
+                              </div>
                        <?php
                }
                    ?>
@@ -84,22 +86,24 @@ echo "NOT VIEWABLE";
 }
 ?>
 <script>
-    function bookCab(id,name, destloc, ploc, passname){
-          var x = document.getElementById("button1");
+    function bookCab(id, destloc, ploc, passname){
+           var x = document.getElementById("button1");
           let dloc = destloc;
-          let name=name;
           let loc = ploc;
           let did = id;
           let pname = passname;
           $.post('admins/addTravel.php', {
               dloc: dloc,
-              name:name
               loc: loc,
               did: did,
               pname: pname
           }, function (result){
               alert(result);
           });
-          if(x.value == "Book Cab") x.value = "Booked";
-      }
+          if(x.value == "Book Cab") x.value = " BOOKED";
+        }
+        function rep(name){
+           let dname = name;
+           $.post('admins/addreply.php', {dname: dname}, function (result){alert(result);}); 
+        }
 </script>

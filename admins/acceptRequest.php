@@ -13,4 +13,7 @@ if(isset($_POST['tid']))
         echo "Error";
     }
 } 
+else{
+    echo "ERROR!!";
+}
 ?>
