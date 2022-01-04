@@ -48,8 +48,9 @@ else{
                         if($data1['req']==1){?>  
                           <img src="accept.jpg" alt="" width="10%" height="10%">  
                           <a href="payment.php"><img src="pay.png" width="30%" height="30%"></a>
+                          <div class="float-right"> Your OTP: 2345 </div>
                            <?php }?>
-
+                        
                         </div>
         
                      <?php
@@ -61,7 +62,7 @@ else{
                             <input onclick="bookCab(<?php echo $data['driver_id'];?>,'<?php echo $dloc;?>', 
                             '<?php echo $loc;?>', '<?php echo $_SESSION['username'];?>'); rep('<?php echo $dname;?>');" 
                             type="button" value="Book Cab" id="button1"></input>
-                              </div>
+                            </div>
                        <?php
                }
                    ?>
